@@ -45,4 +45,10 @@ public class PauseMenu : MonoBehaviour
         Resume();
         SceneManager.LoadScene(0);
     }
+
+    public void onPause(){
+        if(!GameControl.Instance.isGameOver){
+            Pause();
+        }
+    }
 }
